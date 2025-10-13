@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Ana Fernanda De La Torre - Strategic Designer Specialist",
   description: "Portfolio of Ana Fernanda De La Torre, Strategic Designer Specialist",
-  generator: "v0.app",
+  generator: "PPC",
 }
 
 export default function RootLayout({

@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full aspect-[3/4]">
             <Image
-              src="/images/ana-photo.jpg"
+              src="/images/ana-photo.png"
               alt="Ana Fernanda De La Torre"
               fill
               className="object-cover rounded-lg"

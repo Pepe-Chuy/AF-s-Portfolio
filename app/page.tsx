@@ -9,9 +9,9 @@ export default function HomePage() {
   const [itemsVisible, setItemsVisible] = useState(false)
 
   const items = [
-    { name: "About", image: "/images/notebook-black.png", href: "/about", label: "notebook" },
+    { name: "About me", image: "/images/glasses.png", href: "/about", label: "notebook" },
+    { name: "Industrial Design", image: "/images/laptop-green.png", href: "/product-design", label: "laptop" },
     { name: "Skills", image: "/images/pen-pink.png", href: "/skills", label: "pen" },
-    { name: "Product Design", image: "/images/laptop-green.png", href: "/product-design", label: "laptop" },
     { name: "Projects", image: "/images/camera.png", href: "/projects", label: "camera" },
     { name: "Visual Design", image: "/images/notebook-white.png", href: "/visual-design", label: "notebook" },
     { name: "Contact", image: "/images/glasses.png", href: "/contact", label: "glasses" },
@@ -26,7 +26,7 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DIT</h1>
+        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DLT</h1>
         <p className="font-serif italic text-xl text-[#6d6d6d]">Strategic designer specialist</p>
       </motion.header>
 
