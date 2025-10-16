@@ -9,12 +9,13 @@ export default function HomePage() {
   const [itemsVisible, setItemsVisible] = useState(false)
 
   const items = [
-    { name: "About me", image: "/images/glasses.png", href: "/about", label: "notebook" },
-    { name: "Industrial Design", image: "/images/laptop-green.png", href: "/product-design", label: "laptop" },
-    { name: "Skills", image: "/images/pen-pink.png", href: "/skills", label: "pen" },
-    { name: "Projects", image: "/images/camera.png", href: "/projects", label: "camera" },
-    { name: "Visual Design", image: "/images/notebook-white.png", href: "/visual-design", label: "notebook" },
-    { name: "Contact", image: "/images/glasses.png", href: "/contact", label: "glasses" },
+    { name: "Graphic Design", image: "/images/ipad.png", href: "/graphic-design", label: "Graphic Design" },
+    { name: "Industrial Design", image: "/images/laptop.png", href: "/industrial-design", label: "Industrial Design" },
+    { name: "Professional Photography", image: "/images/camera.png", href: "/professional-photography", label: "Professional Photographyy" },
+    { name: "About me", image: "/images/glasses.png", href: "/about-me", label: "About Me" },
+    { name: "Skills", image: "/images/ticket.png", href: "/skills", label: "Skills" },
+    
+    { name: "Contact", image: "/images/glasses.png", href: "/contact", label: "Contact" },
   ]
 
   return (
