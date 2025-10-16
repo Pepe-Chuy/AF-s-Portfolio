@@ -1,6 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/industrial-design/page": "app/industrial-design/page.js",
-  "/graphic-design/page": "app/graphic-design/page.js"
+  "/page": "app/page.js"
 }

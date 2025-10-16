@@ -18,7 +18,7 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#f5f1ed] flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <div className="min-h-screen bg-[#f1f0ee] flex flex-col items-center justify-center px-4 relative overflow-hidden">
       {/* Header */}
       <motion.header
         initial={{ opacity: 0, y: -20 }}
@@ -26,8 +26,8 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DLT</h1>
-        <p className="font-serif italic text-xl text-[#6d6d6d]">Strategic designer specialist</p>
+        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DIT</h1>
+        <p className="font-script text-xl text-[#6d6d6d]">Strategic designer specialist</p>
       </motion.header>
 
       {/* Handbag - Clickable */}
@@ -71,12 +71,11 @@ export default function HomePage() {
                     <motion.div
                       whileHover={{ scale: 1.2, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}
-                      className="flex flex-col items-center bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg cursor-pointer"
+                      className="flex flex-col items-center cursor-pointer"
                     >
-                      <div className="relative w-20 h-20 mb-2">
+                      <div className="relative w-24 h-24">
                         <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-contain" />
                       </div>
-                      <p className="text-xs text-[#6d6d6d] italic text-center">{item.label}</p>
                     </motion.div>
                   </Link>
                 </motion.div>
@@ -92,7 +91,7 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="text-center text-[#6d6d6d] italic mt-8"
+          className="text-center text-[#6d6d6d] font-script mt-8"
         >
           Click the bag to explore
         </motion.p>
