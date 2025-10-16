@@ -26,8 +26,8 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DIT</h1>
-        <p className="font-script text-xl text-[#6d6d6d]">Strategic designer specialist</p>
+        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#3d3d3d] mb-3">ANA FER DLT</h1>
+        <p className="font-script text-7xl text-[#6d6d6d]">Strategic designer specialist</p>
       </motion.header>
 
       {/* Handbag - Clickable */}

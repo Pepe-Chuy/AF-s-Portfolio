@@ -1,18 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function AboutMePage() {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#f5f1ed]">
+    <div className="min-h-screen bg-[#f1f0ee]">
       <Link
         href="/"
-        className="fixed top-8 left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-serif italic"
+        className="fixed top-8 left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-sans italic"
       >
         ← Back to home
       </Link>
 
       <div className="max-w-5xl mx-auto px-4 py-20">
-        <h1 className="font-serif italic text-4xl text-center text-[#3d3d3d] mb-16">about me</h1>
+        <h1 className="font-script text-5xl text-center text-[#3d3d3d] mb-16">about me</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full aspect-[3/4]">
@@ -23,8 +23,8 @@ export default function AboutMePage() {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
-            <p className="font-serif text-lg">
+          <div className="space-y-4 text-[#4d4d4d] leading-relaxed font-sans">
+            <p className="text-lg">
               Hi! My name is <span className="font-semibold">Ana Fernanda De La Torre</span>.
             </p>
             <p>
