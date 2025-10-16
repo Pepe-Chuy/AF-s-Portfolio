@@ -1,0 +1,4 @@
+Main title: Le Jour Serif
+Subtitles: Parfumiere Script Pro
+Text: Montserrat
+Background color: #f1f0ee

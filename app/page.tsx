@@ -14,8 +14,7 @@ export default function HomePage() {
     { name: "Professional Photography", image: "/images/camera.png", href: "/professional-photography", label: "Professional Photographyy" },
     { name: "About me", image: "/images/glasses.png", href: "/about-me", label: "About Me" },
     { name: "Skills", image: "/images/ticket.png", href: "/skills", label: "Skills" },
-    
-    { name: "Contact", image: "/images/glasses.png", href: "/contact", label: "Contact" },
+    { name: "Contact", image: "/images/lipstick.png", href: "/contact", label: "Contact" },
   ]
 
   return (

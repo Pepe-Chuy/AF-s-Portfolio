@@ -16,7 +16,7 @@ export default function SkillsPage() {
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative w-full aspect-[3/4]">
-            <Image src="/images/jeans.jpg" alt="Design work" fill className="object-cover rounded-lg" />
+            <Image src="/images/ticket.png" alt="Design work" fill className="object-cover rounded-lg" />
           </div>
           <div className="space-y-8 text-[#4d4d4d]">
             <div>
