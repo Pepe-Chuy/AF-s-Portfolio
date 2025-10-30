@@ -1,0 +1,174 @@
+"use client"
+
+import Image from "next/image"
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import Link from "next/link"
+
+export default function HomePage() {
+  const [itemsVisible, setItemsVisible] = useState(false)
+const items = [
+  {
+    name: "Graphic Design",
+    image: "/images/ipad.png",
+    href: "/graphic-design",
+    label: "Graphic Design",
+    x: -450,
+    y: 20,
+    labelPosition: "left",
+  },
+  {
+    name: "Industrial Design",
+    image: "/images/laptop.png",
+    href: "/industrial-design",
+    label: "Industrial Design",
+    x: 0,
+    y: -350,
+    labelPosition: "top",
+  },
+  {
+    name: "Professional Photography",
+    image: "/images/camera.png",
+    href: "/professional-photography",
+    label: "Professional Photography",
+    x: 350,
+    y: -200,
+    labelPosition: "right",
+  },
+  {
+    name: "About Me",
+    image: "/images/glasses.png",
+    href: "/about-me",
+    label: "About Me",
+    x: 350,
+    y: 200,
+    labelPosition: "right",
+  },
+  {
+    name: "Skills",
+    image: "/images/ticket.png",
+    href: "/skills",
+    label: "Skills",
+    x: 0,
+    y: 350,
+    labelPosition: "bottom",
+  },
+  {
+    name: "Contact",
+    image: "/images/lipstick.png",
+    href: "/contact",
+    label: "Contact",
+    x: -350,
+    y: 200,
+    labelPosition: "left",
+  },
+];
+
+
+  return (
+    <div className="min-h-screen bg-[#f1f0ee] flex flex-col items-center justify-center px-4 relative overflow-hidden">
+      {/* Header */}
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-12"
+      >
+        <h1 className="font-serif text-6xl md:text-7xl tracking-wide text-[#5f6a61] mb-3">ANA FER DIT</h1>
+        <p className="font-script text-xl text-[#5f6a61]">Strategic designer specialist</p>
+      </motion.header>
+
+      {/* Handbag - Clickable */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="relative w-full max-w-md aspect-[4/3] flex items-center justify-center cursor-pointer"
+        onClick={() => setItemsVisible(!itemsVisible)}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Image src="/images/handbag.png" alt="Designer handbag" width={400} height={300} className="object-contain" />
+      </motion.div>
+
+      {/* Floating Items */}
+      <AnimatePresence>
+        {itemsVisible && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            {items.map((item, index) => {
+              return (
+                <motion.div
+                  key={item.name}
+                  initial={{ x: 0, y: 0, opacity: 0, scale: 0 }}
+                  animate={{ x: item.x, y: item.y, opacity: 1, scale: 1 }}
+                  exit={{ x: 0, y: 0, opacity: 0, scale: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.1,
+                    type: "spring",
+                    stiffness: 100,
+                  }}
+                  className="absolute pointer-events-auto"
+                >
+                  <Link href={item.href}>
+                    <motion.div
+                      whileHover={{ scale: 1.15, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="relative flex items-center cursor-pointer"
+                    >
+                      {/* Label with arrow - positioned based on labelPosition */}
+                      <div
+                        className={`absolute flex items-center gap-2 ${
+                          item.labelPosition === "left"
+                            ? "right-full mr-4 flex-row-reverse"
+                            : item.labelPosition === "right"
+                              ? "left-full ml-4"
+                              : item.labelPosition === "top"
+                                ? "bottom-full mb-4 flex-col-reverse"
+                                : "top-full mt-4 flex-col"
+                        }`}
+                      >
+                        <span className="font-script text-lg text-[#5f6a61] whitespace-nowrap">{item.label}</span>
+                        {/* Arrow pointing to item */}
+                        <div
+                          className={`w-6 h-6 relative ${
+                            item.labelPosition === "left"
+                              ? "rotate-0"
+                              : item.labelPosition === "right"
+                                ? "rotate-180"
+                                : item.labelPosition === "top"
+                                  ? "rotate-90"
+                                  : "-rotate-90"
+                          }`}
+                        >
+                          <Image src="/images/arrow.png" alt="" fill className="object-contain" />
+                        </div>
+                      </div>
+
+                      {/* Item image - larger size */}
+                      <div className="relative w-32 h-32">
+                        <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-contain" />
+                      </div>
+                    </motion.div>
+                  </Link>
+                </motion.div>
+              )
+            })}
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Instruction text */}
+      {!itemsVisible && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+          className="text-center text-[#5f6a61] font-script mt-8"
+        >
+          Click the bag to explore
+        </motion.p>
+      )}
+    </div>
+  )
+}

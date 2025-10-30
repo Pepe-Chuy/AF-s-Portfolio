@@ -133,4 +133,14 @@
     * {
     color: #5f6a61 !important;
   }
+    h1 {
+    @apply text-6xl font-serif font-bold leading-tight;
+  }
+  p {
+    @apply text-xl leading-relaxed;
+  }
 }
+
+
+
+

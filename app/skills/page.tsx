@@ -12,7 +12,7 @@ export default function SkillsPage() {
       </Link>
 
       <div className="max-w-5xl mx-auto px-4 py-20">
-        <h1 className="font-serif italic text-4xl text-center text-[#3d3d3d] mb-16">skills</h1>
+        <h1 className="font-script font-normal text-9xl text-center text-[#3d3d3d] mb-16">skills</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative w-full aspect-[3/4]">
