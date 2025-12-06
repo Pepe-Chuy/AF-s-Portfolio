@@ -18,7 +18,8 @@ export default function IndustrialDesignPage() {
 
         <div className="space-y-32">
           {/* Perfume Packaging */}
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <div className="relative w-full aspect-square">
                 <Image 
@@ -29,8 +30,8 @@ export default function IndustrialDesignPage() {
                 />
               </div>
             </div>
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed pt-8">
-              <h3 className="font-semibold text-2xl text-[#3d3d3d]">Perfume Packaging (2023)</h3>
+            <div className="flex flex-col justify-center space-y-4 text-[#4d4d4d] leading-relaxed font-medium h-full">
+              <h3 className="font-bold text-2xl text-[#3d3d3d]">Perfume Packaging (2023)</h3>
               <p>
                 Digital and physical development of an innovative perfume container, designed with ergonomic form and 
                 structural originality. <strong>Modeled in SolidWorks, rendered in Adobe Substance, and prototyped using 3D resin 
@@ -39,30 +40,40 @@ export default function IndustrialDesignPage() {
             </div>
           </div>
 
+
           {/* Headphones */}
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed pt-8 order-2 md:order-1">
-              <h3 className="font-semibold text-2xl text-[#3d3d3d]">Headphones (2024)</h3>
-              <p>
-                Inspired by Lamborghini's bold geometric design language, these functional headphones combine 
-                aesthetics with performance. The design process focused on angular forms and integrated magnets for 
-                attachment, resulting in a futuristic and distinctive product. The project was developed in <strong>SolidWorks, 
-                textured in Adobe Substance</strong>, and brought to life with 3D printing, alongside a stand designed for 
-                presentation.
-              </p>
-            </div>
-            <div className="space-y-6 order-1 md:order-2">
-              <div className="relative w-full aspect-[4/3]">
-                <Image 
-                  src="/images/headphones.png" 
-                  alt="Headphones on mannequin" 
-                  fill 
-                  className="object-cover rounded-lg" 
-                />
-              </div>
-              <div className="relative w-full aspect-square">
+          <div className="grid md:grid-cols-4 gap-8 min-h-[80vh] relative">
+            {/* First image – slightly shorter, fully visible, extending into next section */}
+            <div className="flex items-start justify-center md:col-span-1 md:row-span-1">
+              <div className="relative w-[95%] md:w-[105%] h-[55vh] md:h-[70vh]">
                 <Image 
                   src="/images/headphones_head.png" 
+                  alt="Headphones on mannequin" 
+                  fill 
+                  className="object-contain rounded-lg" 
+                />
+              </div>
+            </div>
+
+            {/* Text – spans columns 2–4, slightly below center */}
+            <div className="md:col-span-3 flex items-start md:items-center">
+              <div className="mt-20 md:mt-32 space-y-4 text-[#4d4d4d] leading-relaxed font-medium">
+                <h3 className="font-semibold text-2xl text-[#3d3d3d]">Headphones (2024)</h3>
+                <p>
+                  Inspired by Lamborghini's bold geometric design language, these functional headphones combine 
+                  aesthetics with performance. The design process focused on angular forms and integrated magnets for 
+                  attachment, resulting in a futuristic and distinctive product. The project was developed in <strong>SolidWorks, 
+                  textured in Adobe Substance</strong>, and brought to life with 3D printing, alongside a stand designed for 
+                  presentation.
+                </p>
+              </div>
+            </div>
+
+            {/* Second image – bigger and lower */}
+            <div className="flex items-start justify-center md:absolute md:top-32 md:right-0 w-[30%]">
+              <div className="relative w-full aspect-square">
+                <Image 
+                  src="/images/headphones.png" 
                   alt="Headphones detail" 
                   fill 
                   className="object-contain" 
@@ -70,6 +81,7 @@ export default function IndustrialDesignPage() {
               </div>
             </div>
           </div>
+
 
           {/* PureDial */}
           <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -94,46 +106,49 @@ export default function IndustrialDesignPage() {
           </div>
 
           {/* Tattoo Machine */}
-          <div className="grid md:grid-cols-2 gap-16 items-start pb-20">
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed pt-8 order-2 md:order-1">
-              <h3 className="font-semibold text-2xl text-[#3d3d3d]">Tattoo Machine – Proposal (2025)</h3>
-              <p>
-                This concept explores the design of an ergonomic tattoo machine, developed with fluid geometries and a 
-                dynamic surface texture to enhance grip and precision. The proposal combines aesthetics with functionality, 
-                integrating modern materials and a sleek form to improve user comfort during extended sessions. The 
-                visualization includes both technical sketches and 3D renderings to highlight its evolution from concept to 
-                refined design. <strong>(Solid Works, Adobe 3D, Substance, Procreat)</strong>
-              </p>
-            </div>
-            <div className="space-y-6 order-1 md:order-2">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative w-full aspect-[3/4]">
-                  <Image 
-                    src="/images/tattoo_1.png" 
-                    alt="Tattoo machine concept 1" 
-                    fill 
-                    className="object-cover rounded-lg" 
-                  />
-                </div>
-                <div className="relative w-full aspect-[3/4]">
-                  <Image 
-                    src="/images/tattoo_2.png" 
-                    alt="Tattoo machine concept 2" 
-                    fill 
-                    className="object-cover rounded-lg" 
-                  />
-                </div>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* Left images scaled */}
+            <div className="flex gap-4 justify-center">
+              <div className="relative w-1/2 aspect-[3/4]">
+                <Image 
+                  src="/images/tattoo_1.png" 
+                  alt="Tattoo machine concept 1" 
+                  fill 
+                  className="object-cover rounded-lg" 
+                />
               </div>
-              <div className="relative w-full aspect-[16/9]">
+              <div className="relative w-1/2 aspect-[3/4]">
                 <Image 
                   src="/images/tattoo_3.png" 
-                  alt="Tattoo machine render" 
+                  alt="Tattoo machine concept 2" 
                   fill 
-                  className="object-contain" 
+                  className="object-cover rounded-lg" 
                 />
               </div>
             </div>
+
+            {/* Text with inline image */}
+            <div className="space-y-4 text-[#4d4d4d] leading-relaxed font-medium">
+              <h3 className="font-semibold text-2xl text-[#3d3d3d]">
+                Tattoo Machine – Proposal (2025)
+              </h3>
+
+              <p className="relative">
+                {/* Inline image floated to top-right */}
+                <span className="relative float-right w-52 h-32 ml-4 mb-2">
+                  <Image
+                    src="/images/tattoo_2.png"
+                    alt="Tattoo machine render"
+                    fill
+                    className="object-contain"
+                  />
+                </span>
+                The proposal combines aesthetics with functionality, integrating modern materials and a sleek form to
+                improve user comfort during extended sessions.
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </div>

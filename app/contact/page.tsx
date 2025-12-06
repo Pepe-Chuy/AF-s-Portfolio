@@ -11,14 +11,28 @@ export default function ContactPage() {
       </Link>
 
       <div className="max-w-2xl mx-auto px-4 text-center">
-        <h1 className="font-serif italic text-5xl text-[#3d3d3d] mb-8">
-          strategic &<br />
-          conceptual design
+        <h1 className="font-script font-normal text-8xl md:text-[10rem] text-[#3d3d3d] text-center mb-16">
+          Contact
         </h1>
-        <p className="text-[#6d6d6d] text-lg mb-8">Let&apos;s create something meaningful together.</p>
-        <div className="space-y-4 text-[#4d4d4d]">
-          <p>Ana Fernanda De La Torre</p>
+        <p className="text-[#6d6d6d] text-lg mb-8">
+          Let&apos;s create something meaningful together.
+        </p>
+
+        <div className="space-y-3 text-[#4d4d4d]">
+          <p className="font-semibold text-xl">
+            Ana Fernanda De La Torre Martínez Rojas
+          </p>
           <p className="italic">Strategic Designer Specialist</p>
+          <p>Cel: <span className="font-medium">3317033199</span></p>
+          <p>
+            Correo:{" "}
+            <a
+              href="mailto:ana0170@outlook.com"
+              className="underline hover:text-[#3d3d3d] transition-colors"
+            >
+              ana0170@outlook.com
+            </a>
+          </p>
         </div>
       </div>
     </div>

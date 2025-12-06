@@ -16,31 +16,41 @@ export default function SkillsPage() {
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative w-full aspect-[3/4]">
-            <Image src="/images/ticket.png" alt="Design work" fill className="object-cover rounded-lg" />
+            <Image src="/images/ticketvert.png" alt="Design work" fill className="object-cover rounded-lg" />
           </div>
           <div className="space-y-8 text-[#4d4d4d]">
             <div>
-              <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Industrial and Product Design</h3>
+              <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Strategic and Conceptual Design</h3>
               <ul className="space-y-2 text-sm leading-relaxed">
-                <li>• Product Design → Creating functional and aesthetically pleasing products</li>
-                <li>• Prototyping → Developing prototypes with a focus on impact, feasibility, and viability</li>
-                <li>• 3D Modeling → Realistic visualization of projects for communication and presentation</li>
+                <li>• Strategic Design → Developing proposals with a focus on impact, feasibility, and differentiation.</li>
+                <li>• Brand Design → Building visual identities aligned with each project’s values.</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Visual and Graphic Design</h3>
+              <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Industrial and Product Design</h3>
               <ul className="space-y-2 text-sm leading-relaxed">
-                <li>• Graphic Design → Visual communication and brand storytelling</li>
-                <li>• Photo Photography & Portraits → Capturing moments and emotions</li>
-                <li>• Packaging Design → Designing attractive and functional packaging</li>
+                <li>• Product Design → Creating functional and aesthetic products.</li>
+                <li>• Prototype production → eveloping prototypes to validate ideas and test user experiences.</li>
+                <li>• Renders → Realistic visualization of projects for communication and presentations.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Visual and Graphic design</h3>
+              <ul className="space-y-2 text-sm leading-relaxed">
+                <li>• Graphic Design → Visual communication and brand storytelling.</li>
+                <li>• Artistic Photography & Portraits → Creative and narrative-driven photography.</li>
+                <li>• Product Photography & Photo Production → Professional visual production to showcase products</li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Tools & Software</h3>
               <ul className="space-y-2 text-sm leading-relaxed">
-                <li>• Adobe Suite (Photoshop, Illustrator, InDesign)</li>
-                <li>• 3D Software (SolidWorks, Blender, KeyShot)</li>
-                <li>• Prototyping tools</li>
+                <li>• Adobe Creative Suite (Illustrator, Photoshop, InDesign, After Effects)</li>
+                <li>• Figma (UI/UX design & prototyping)</li>
+                <li>• SolidWorks (3D modeling & product design)</li>
+                <li>• Substance 3D Stager (materials, textures & rendering)</li>
+                <li>• Canva (visual communication & quick layouts)</li>
+                <li>• Microsoft Office / Google Workspace (presentations, documents & collaboration)</li>
               </ul>
             </div>
           </div>

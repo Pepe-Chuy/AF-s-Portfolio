@@ -34,16 +34,22 @@ export default function AboutPage() {
             Hi! My name is <span className="font-semibold">Ana Fernanda De La Torre</span>.
           </p>
           <p className="text-xl md:text-2xl mb-6">
-            I am a Strategic designer, passionate about creating solutions that blend aesthetics, functionality, and
-            purpose. My work focuses on transforming ideas into meaningful experiences that inspire and shape
-            memorable human experiences.
+            I am a strategic designer, passionate about creating
+            solutions that blend aesthetics, functionality and experience.
+            I see design as a tool to tell stories, build authentic
+            identities and shape memorable human experiences.
           </p>
           <p className="text-xl md:text-2xl">
-            What I do: I'm passionate about designing products and experiences that are not only beautiful but
-            also intuitive and driven to sell. These experiences fuel my creativity and bring balance to my work.
+            When I´m not designing you´ll probably find me sketching ideas, reading, 
+            painting or discovering new places to eat. These experiences fuel 
+            my creativity and bring balance to my work.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+

@@ -29,30 +29,22 @@ export default function VisualGraphicDesignPage() {
           </div>
           <div className="space-y-4 leading-relaxed">
             <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-              Game On (2023)
+              Game On (2022)
             </h3>
             <p>
-              Branding and visual identity for a sports broadcast show. Developed
-              a cohesive graphic system including motion design, typographic
-              hierarchy, and an energetic color palette to capture the show’s
-              dynamism.
+              An interactive game designed to maintain children’s physical activity during the
+              pandemic while ensuring safety. The system works with motion sensors and Bluetooth
+              connectivity. Development included brand identity design and packaging. Designed in
+              Solid Works and branding in Adobe Illustrator.{" "}
+              <strong>Winner of ITESO’s Design Expo.</strong>
             </p>
           </div>
         </div>
 
         {/* NASA */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4 leading-relaxed order-2 md:order-1">
-            <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-              NASA Proposal (2024)
-            </h3>
-            <p>
-              Conceptual rebrand for NASA’s public outreach campaigns, emphasizing
-              curiosity, exploration, and clarity. The proposal merges typography
-              and minimal design to modernize visual communication.
-            </p>
-          </div>
-          <div className="relative w-full aspect-[16/9] order-1 md:order-2">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left large image */}
+          <div className="relative w-full aspect-[16/9] order-1 md:order-1">
             <Image
               src="/images/NASA_1.png"
               alt="NASA Project 1"
@@ -60,48 +52,72 @@ export default function VisualGraphicDesignPage() {
               className="object-contain"
             />
           </div>
-        </div>
 
-        {/* Second NASA Image */}
-        <div className="relative w-full aspect-[16/9]">
-          <Image
-            src="/images/NASA_2.png"
-            alt="NASA Project 2"
-            fill
-            className="object-contain"
-          />
-        </div>
-
-        {/* Ukraine */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full aspect-[16/9]">
-            <Image
-              src="/images/ukraine_1.png"
-              alt="Ukraine Awareness 1"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="space-y-4 leading-relaxed">
+          {/* Text with logo at top right */}
+          <div className="relative space-y-4 leading-relaxed order-2 md:order-2">
+            {/* Small logo positioned outside text flow */}
+            <div className="flex justify-end mb-4">
+              <div className="relative w-28 h-28 md:w-36 md:h-36">
+                <Image
+                  src="/images/NASA_2.png"
+                  alt="NASA Logo small"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
             <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-              Ukraine Awareness (2023)
+              NASA Logo (2022)
             </h3>
             <p>
-              Visual campaign supporting awareness and solidarity with Ukraine.
-              Focused on simplicity, emotional impact, and color symbolism to
-              convey unity and resilience.
+              Created for NASA’s EMIDSS-4 satellite competition, this logo was selected as the{" "}
+              <strong>national winner</strong> among submissions from multiple universities across Mexico.
+              The design integrates precision, innovation, and a sense of exploration aligned with NASA’s
+              visual identity. It was published in scientific journals and printed on the EMIDSS-4 satellite,
+              representing the spirit of collaboration between design and space research.
             </p>
           </div>
         </div>
 
-        {/* Second Ukraine Image */}
-        <div className="relative w-full aspect-[16/9]">
-          <Image
-            src="/images/ukraine_2.png"
-            alt="Ukraine Awareness 2"
-            fill
-            className="object-contain"
-          />
+        {/* Peace Poster – Ukraine */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Two images side by side on the left */}
+          <div className="flex gap-6 w-full">
+            <div className="relative flex-1 aspect-[4/5]">
+              <Image
+                src="/images/ukraine_1.png"
+                alt="Ukraine Awareness 1"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative flex-1 aspect-[4/5]">
+              <Image
+                src="/images/ukraine_2.png"
+                alt="Ukraine Awareness 2"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Text on the right */}
+          <div className="space-y-4 leading-relaxed">
+            <h3 className="font-semibold text-2xl text-[#3d3d3d]">
+              Peace Poster – Ukraine (2022)
+            </h3>
+            <p>
+              Developed as part of a semiotics design project, this poster promotes
+              peace during the war in Ukraine, using symbolic language and visual harmony
+              to convey resilience and hope. The concept was guided by semiotic
+              principles, emphasizing contrast, color psychology, and minimal form.{" "}
+              <strong>
+                The piece was selected among international participants and
+                featured in global exhibitions and publications as a call for empathy
+                through design.
+              </strong>
+            </p>
+          </div>
         </div>
       </div>
     </div>
