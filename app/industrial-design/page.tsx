@@ -16,7 +16,7 @@ export default function IndustrialDesignPage() {
           Industrial & product design<br />
         </h1>
 
-        <div className="space-y-32">
+        <div className="space-y-24">
           {/* Perfume Packaging */}
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -42,10 +42,10 @@ export default function IndustrialDesignPage() {
 
 
           {/* Headphones */}
-          <div className="grid md:grid-cols-4 gap-8 min-h-[80vh] relative">
+          <div className="grid md:grid-cols-4 gap-8 min-h-[95vh] relative">
             {/* First image – slightly shorter, fully visible, extending into next section */}
             <div className="flex items-start justify-center md:col-span-1 md:row-span-1">
-              <div className="relative w-[95%] md:w-[105%] h-[55vh] md:h-[70vh]">
+              <div className="relative w-[95%] md:w-[105%] h-[55vh] md:h-[80vh]">
                 <Image 
                   src="/images/headphones_head.png" 
                   alt="Headphones on mannequin" 
@@ -106,10 +106,10 @@ export default function IndustrialDesignPage() {
           </div>
 
           {/* Tattoo Machine */}
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Left images scaled */}
-            <div className="flex gap-4 justify-center">
-              <div className="relative w-1/2 aspect-[3/4]">
+          <div className="grid md:grid-cols-2 gap-8 items-start min-h-[85vh]">
+            {/* Left images scaled and overlapped */}
+            <div className="flex gap-0 justify-center relative">
+              <div className="relative w-[55%] aspect-[3/4] z-10">
                 <Image 
                   src="/images/tattoo_1.png" 
                   alt="Tattoo machine concept 1" 
@@ -117,7 +117,7 @@ export default function IndustrialDesignPage() {
                   className="object-cover rounded-lg" 
                 />
               </div>
-              <div className="relative w-1/2 aspect-[3/4]">
+              <div className="relative w-[55%] aspect-[3/4] -ml-12">
                 <Image 
                   src="/images/tattoo_3.png" 
                   alt="Tattoo machine concept 2" 
@@ -128,14 +128,14 @@ export default function IndustrialDesignPage() {
             </div>
 
             {/* Text with inline image */}
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed font-medium">
+            <div className="space-y-4 text-[#4d4d4d] leading-relaxed font-medium -ml-8">
               <h3 className="font-semibold text-2xl text-[#3d3d3d]">
                 Tattoo Machine – Proposal (2025)
               </h3>
 
               <p className="relative">
                 {/* Inline image floated to top-right */}
-                <span className="relative float-right w-52 h-32 ml-4 mb-2">
+                <span className="relative float-right w-96 h-80 ml-4 mb-2">
                   <Image
                     src="/images/tattoo_2.png"
                     alt="Tattoo machine render"

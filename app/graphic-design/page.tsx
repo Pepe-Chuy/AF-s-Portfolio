@@ -11,14 +11,26 @@ export default function VisualGraphicDesignPage() {
         ← Back to home
       </Link>
 
-      <div className="max-w-6xl mx-auto px-8 py-20 space-y-24">
-        {/* Title */}
-        <h1 className="font-script font-normal text-8xl md:text-[10rem] text-[#3d3d3d] mb-16">
-          Visual & graphic design<br />
+      <div className="max-w-6xl mx-auto px-8 py-20">
+        {/* Title - centered */}
+        <h1 className="font-script font-normal text-7xl md:text-8xl text-[#3d3d3d] text-center mb-20">
+          visual & graphic<br />design
         </h1>
 
-        {/* Game On */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* Game On - Text Left, Image Right */}
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-32">
+          <div className="space-y-4">
+            <h3 className="font-bold text-xl text-[#3d3d3d]">
+              Game On (2022)
+            </h3>
+            <p className="text-base leading-relaxed">
+              An interactive game designed to maintain children's physical activity during the
+              pandemic while ensuring safety. The system works with motion sensors and Bluetooth
+              connectivity. Development included brand identity design and packaging. Designed in
+              Solid Works and branding in Adobe Illustrator.{" "}
+              <strong>Winner of ITESO's Design Expo.</strong>
+            </p>
+          </div>
           <div className="relative w-full aspect-[16/9]">
             <Image
               src="/images/game_on.png"
@@ -27,63 +39,50 @@ export default function VisualGraphicDesignPage() {
               className="object-contain"
             />
           </div>
-          <div className="space-y-4 leading-relaxed">
-            <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-              Game On (2022)
-            </h3>
-            <p>
-              An interactive game designed to maintain children’s physical activity during the
-              pandemic while ensuring safety. The system works with motion sensors and Bluetooth
-              connectivity. Development included brand identity design and packaging. Designed in
-              Solid Works and branding in Adobe Illustrator.{" "}
-              <strong>Winner of ITESO’s Design Expo.</strong>
-            </p>
-          </div>
         </div>
 
-        {/* NASA */}
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Left large image */}
-          <div className="relative w-full aspect-[16/9] order-1 md:order-1">
+        {/* NASA - Image Left, Text and Logo Right */}
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-32">
+          <div className="relative w-[115%] aspect-[4/3]">
             <Image
               src="/images/NASA_1.png"
-              alt="NASA Project 1"
+              alt="NASA Project"
               fill
               className="object-contain"
             />
           </div>
-
-          {/* Text with logo at top right */}
-          <div className="relative space-y-4 leading-relaxed order-2 md:order-2">
-            {/* Small logo positioned outside text flow */}
+          <div className="relative h-full flex flex-col">
+            {/* Logo at top right */}
             <div className="flex justify-end mb-4">
-              <div className="relative w-28 h-28 md:w-36 md:h-36">
+              <div className="relative w-[80%] aspect-square max-w-[200px]">
                 <Image
                   src="/images/NASA_2.png"
-                  alt="NASA Logo small"
+                  alt="NASA Logo"
                   fill
                   className="object-contain"
                 />
               </div>
             </div>
-            <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-              NASA Logo (2022)
-            </h3>
-            <p>
-              Created for NASA’s EMIDSS-4 satellite competition, this logo was selected as the{" "}
-              <strong>national winner</strong> among submissions from multiple universities across Mexico.
-              The design integrates precision, innovation, and a sense of exploration aligned with NASA’s
-              visual identity. It was published in scientific journals and printed on the EMIDSS-4 satellite,
-              representing the spirit of collaboration between design and space research.
-            </p>
+            {/* Text at bottom left */}
+            <div className="space-y-4 mt-auto">
+              <h3 className="font-bold text-xl text-[#3d3d3d]">
+                NASA Logo (2022)
+              </h3>
+              <p className="text-base leading-relaxed">
+                Created for NASA's EMIDSS-4 satellite competition, this logo was selected as the{" "}
+                <strong>national winner</strong> among submissions from multiple universities across Mexico.
+                The design integrates precision, innovation, and a sense of exploration aligned with NASA's
+                visual identity. It was published in scientific journals and printed on the EMIDSS-4 satellite,
+                representing the spirit of collaboration between design and space research.
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Peace Poster – Ukraine */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Two images side by side on the left */}
-          <div className="flex gap-6 w-full">
-            <div className="relative flex-1 aspect-[4/5]">
+        {/* Peace Poster - Images Left, Text Right */}
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="flex gap-4 w-full">
+            <div className="relative flex-1 aspect-[3/5]">
               <Image
                 src="/images/ukraine_1.png"
                 alt="Ukraine Awareness 1"
@@ -91,7 +90,7 @@ export default function VisualGraphicDesignPage() {
                 className="object-contain"
               />
             </div>
-            <div className="relative flex-1 aspect-[4/5]">
+            <div className="relative flex-1 aspect-[3/5]">
               <Image
                 src="/images/ukraine_2.png"
                 alt="Ukraine Awareness 2"
@@ -100,13 +99,11 @@ export default function VisualGraphicDesignPage() {
               />
             </div>
           </div>
-
-          {/* Text on the right */}
-          <div className="space-y-4 leading-relaxed">
-            <h3 className="font-semibold text-2xl text-[#3d3d3d]">
+          <div className="space-y-4">
+            <h3 className="font-bold text-xl text-[#3d3d3d]">
               Peace Poster – Ukraine (2022)
             </h3>
-            <p>
+            <p className="text-base leading-relaxed">
               Developed as part of a semiotics design project, this poster promotes
               peace during the war in Ukraine, using symbolic language and visual harmony
               to convey resilience and hope. The concept was guided by semiotic

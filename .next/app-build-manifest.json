@@ -6,40 +6,40 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/graphic-design/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/graphic-design/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
-    ],
-    "/about-me/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about-me/page.js"
     ],
     "/industrial-design/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/industrial-design/page.js"
     ],
-    "/professional-photography/page": [
+    "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/professional-photography/page.js"
+      "static/chunks/app/contact/page.js"
     ],
     "/skills/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/skills/page.js"
     ],
-    "/contact/page": [
+    "/about-me/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/about-me/page.js"
     ],
-    "/graphic-design/page": [
+    "/professional-photography/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/graphic-design/page.js"
+      "static/chunks/app/professional-photography/page.js"
     ]
   }
 }

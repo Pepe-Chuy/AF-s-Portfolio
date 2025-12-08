@@ -1,6 +1,6 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"node_modules/geist/dist/sans.js","import":"","arguments":[{"src":"./fonts/geist-sans/Geist-Variable.woff2","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"GeistSans"} ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"node_modules\\geist\\dist\\sans.js","import":"","arguments":[{"src":"./fonts/geist-sans/Geist-Variable.woff2","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"GeistSans"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'GeistSans';
 src: url(/_next/static/media/028c0d39d2e8f589-s.p.woff2) format('woff2');
@@ -11,9 +11,9 @@ font-weight: 100 900;
 }.__variable_fb8f2c {--font-geist-sans: 'GeistSans', 'GeistSans Fallback'
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"node_modules/geist/dist/mono.js","import":"","arguments":[{"src":"./fonts/geist-mono/GeistMono-Variable.woff2","variable":"--font-geist-mono","adjustFontFallback":false,"fallback":["ui-monospace","SFMono-Regular","Roboto Mono","Menlo","Monaco","Liberation Mono","DejaVu Sans Mono","Courier New","monospace"],"weight":"100 900"}],"variableName":"GeistMono"} ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"node_modules\\geist\\dist\\mono.js","import":"","arguments":[{"src":"./fonts/geist-mono/GeistMono-Variable.woff2","variable":"--font-geist-mono","adjustFontFallback":false,"fallback":["ui-monospace","SFMono-Regular","Roboto Mono","Menlo","Monaco","Liberation Mono","DejaVu Sans Mono","Courier New","monospace"],"weight":"100 900"}],"variableName":"GeistMono"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'GeistMono';
 src: url(/_next/static/media/5b01f339abf2f1a5.p.woff2) format('woff2');
@@ -23,9 +23,9 @@ font-weight: 100 900;
 }.__variable_f910ec {--font-geist-mono: 'GeistMono', ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.tsx","import":"","arguments":[{"src":"../public/fonts/Le Jour Serif.woff2","variable":"--font-le-jour","display":"swap"}],"variableName":"leJourSerif"} ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/Le Jour Serif.woff2","variable":"--font-le-jour","display":"swap"}],"variableName":"leJourSerif"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'leJourSerif';
 src: url(/_next/static/media/9b6f42fcaf522588-s.p.woff2) format('woff2');
@@ -35,9 +35,9 @@ font-display: swap;
 }.__variable_08d78e {--font-le-jour: 'leJourSerif', 'leJourSerif Fallback'
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.tsx","import":"","arguments":[{"src":"../public/fonts/Parfumiere Script Pro.woff2","variable":"--font-parfumiere","display":"swap"}],"variableName":"parfumiereScript"} ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/Parfumiere Script Pro.woff2","variable":"--font-parfumiere","display":"swap"}],"variableName":"parfumiereScript"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'parfumiereScript';
 src: url(/_next/static/media/dac99b744fe2b7d8-s.p.woff2) format('woff2');
@@ -47,9 +47,9 @@ font-display: swap;
 }.__variable_bed8b2 {--font-parfumiere: 'parfumiereScript', 'parfumiereScript Fallback'
 }
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.tsx","import":"","arguments":[{"src":"../public/fonts/Montserrat-ExtraLight.woff2","variable":"--font-montserrat","display":"swap"}],"variableName":"montserrat"} ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/Montserrat-ExtraLight.woff2","variable":"--font-montserrat","display":"swap"}],"variableName":"montserrat"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'montserrat';
 src: url(/_next/static/media/225949ee60507cc6-s.p.woff2) format('woff2');
@@ -77,7 +77,6 @@ font-display: swap;
     --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
@@ -332,6 +331,9 @@ font-display: swap;
   .inset-y-0 {
     inset-block: calc(var(--spacing) * 0);
   }
+  .-top-8 {
+    top: calc(var(--spacing) * -8);
+  }
   .-top-12 {
     top: calc(var(--spacing) * -12);
   }
@@ -367,6 +369,9 @@ font-display: swap;
   }
   .top-full {
     top: 100%;
+  }
+  .-right-8 {
+    right: calc(var(--spacing) * -8);
   }
   .-right-12 {
     right: calc(var(--spacing) * -12);
@@ -436,12 +441,6 @@ font-display: swap;
   }
   .z-\[100\] {
     z-index: 100;
-  }
-  .order-1 {
-    order: 1;
-  }
-  .order-2 {
-    order: 2;
   }
   .order-first {
     order: -9999;
@@ -578,8 +577,23 @@ font-display: swap;
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-32 {
+    margin-bottom: calc(var(--spacing) * 32);
+  }
   .-ml-4 {
     margin-left: calc(var(--spacing) * -4);
+  }
+  .-ml-8 {
+    margin-left: calc(var(--spacing) * -8);
+  }
+  .-ml-12 {
+    margin-left: calc(var(--spacing) * -12);
+  }
+  .-ml-24 {
+    margin-left: calc(var(--spacing) * -24);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -641,6 +655,9 @@ font-display: swap;
   .field-sizing-content {
     field-sizing: content;
   }
+  .aspect-\[2\/4\] {
+    aspect-ratio: 2/4;
+  }
   .aspect-\[3\/4\] {
     aspect-ratio: 3/4;
   }
@@ -649,9 +666,6 @@ font-display: swap;
   }
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
-  }
-  .aspect-\[4\/5\] {
-    aspect-ratio: 4/5;
   }
   .aspect-\[5\/3\] {
     aspect-ratio: 5/3;
@@ -756,9 +770,6 @@ font-display: swap;
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
-  .h-28 {
-    height: calc(var(--spacing) * 28);
-  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -767,6 +778,15 @@ font-display: swap;
   }
   .h-40 {
     height: calc(var(--spacing) * 40);
+  }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
   }
   .h-\[1\.15rem\] {
     height: 1.15rem;
@@ -828,6 +848,12 @@ font-display: swap;
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
+  .min-h-\[85vh\] {
+    min-height: 85vh;
+  }
+  .min-h-\[95vh\] {
+    min-height: 95vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -876,9 +902,6 @@ font-display: swap;
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
-  }
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
@@ -887,6 +910,9 @@ font-display: swap;
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
@@ -897,14 +923,38 @@ font-display: swap;
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-144 {
+    width: calc(var(--spacing) * 144);
+  }
   .w-\[30\%\] {
     width: 30%;
+  }
+  .w-\[48\%\] {
+    width: 48%;
+  }
+  .w-\[55\%\] {
+    width: 55%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
   }
   .w-\[95\%\] {
     width: 95%;
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-\[100px\] {
     width: 100px;
+  }
+  .w-\[115\%\] {
+    width: 115%;
   }
   .w-auto {
     width: auto;
@@ -939,6 +989,12 @@ font-display: swap;
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .max-w-\[200px\] {
+    max-width: 200px;
+  }
+  .max-w-\[250px\] {
+    max-width: 250px;
+  }
   .max-w-\[calc\(100\%-2rem\)\] {
     max-width: calc(100% - 2rem);
   }
@@ -956,9 +1012,6 @@ font-display: swap;
   }
   .max-w-sm {
     max-width: var(--container-sm);
-  }
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
   .min-w-\(--cell-size\) {
     min-width: var(--cell-size);
@@ -1069,12 +1122,6 @@ font-display: swap;
   .translate-y-\[calc\(-50\%_-_2px\)\] {
     --tw-translate-y: calc(-50% - 2px);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .scale-90 {
-    --tw-scale-x: 90%;
-    --tw-scale-y: 90%;
-    --tw-scale-z: 90%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-\[1\.15\] {
     scale: 1.15;
@@ -1189,6 +1236,9 @@ font-display: swap;
   }
   .justify-items-start {
     justify-items: start;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -1690,6 +1740,10 @@ font-display: swap;
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
   .text-8xl {
     font-size: var(--text-8xl);
@@ -4292,16 +4346,6 @@ font-display: swap;
       right: calc(var(--spacing) * 0);
     }
   }
-  .md\:order-1 {
-    @media (width >= 48rem) {
-      order: 1;
-    }
-  }
-  .md\:order-2 {
-    @media (width >= 48rem) {
-      order: 2;
-    }
-  }
   .md\:col-span-1 {
     @media (width >= 48rem) {
       grid-column: span 1 / span 1;
@@ -4337,14 +4381,14 @@ font-display: swap;
       display: flex;
     }
   }
-  .md\:h-36 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 36);
-    }
-  }
   .md\:h-\[70vh\] {
     @media (width >= 48rem) {
       height: 70vh;
+    }
+  }
+  .md\:h-\[80vh\] {
+    @media (width >= 48rem) {
+      height: 80vh;
     }
   }
   .md\:w-1\/3 {
@@ -4355,11 +4399,6 @@ font-display: swap;
   .md\:w-2\/3 {
     @media (width >= 48rem) {
       width: calc(2/3 * 100%);
-    }
-  }
-  .md\:w-36 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 36);
     }
   }
   .md\:w-\[105\%\] {
@@ -4395,6 +4434,11 @@ font-display: swap;
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[0\.9fr_1\.1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 0.9fr 1.1fr;
     }
   }
   .md\:flex-row {
@@ -4443,6 +4487,12 @@ font-display: swap;
     @media (width >= 48rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .md\:text-8xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
   .md\:text-sm {
@@ -5643,21 +5693,6 @@ font-display: swap;
   inherits: false;
   initial-value: 0;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -5949,9 +5984,6 @@ font-display: swap;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;

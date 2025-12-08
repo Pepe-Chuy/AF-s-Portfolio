@@ -1,4 +1,4 @@
-// File: /home/pepechuy/Downloads/AnaFer/AF-s-Portfolio/app/page.tsx
+// File: C:\Users\dosju\Downloads\afpoty\AF-s-Portfolio\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

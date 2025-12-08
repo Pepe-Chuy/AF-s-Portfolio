@@ -1,4 +1,4 @@
-// File: /home/pepechuy/Downloads/AnaFer/AF-s-Portfolio/app/industrial-design/page.tsx
+// File: C:\Users\dosju\Downloads\afpoty\AF-s-Portfolio\app\industrial-design\page.tsx
 import * as entry from '../../../../app/industrial-design/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
