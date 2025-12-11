@@ -1,0 +1,25 @@
+/* [project]/AF-s-Portfolio/app/lejourserif_e4b438b5.module.css [app-client] (css) */
+@font-face {
+  font-family: leJourSerif;
+  src: url("../media/Le Jour Serif-s.p.428474eb.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: leJourSerif Fallback;
+  src: local(Arial);
+  ascent-override: 89.82%;
+  descent-override: 44.24%;
+  line-gap-override: 0.0%;
+  size-adjust: 134.26%;
+}
+
+.lejourserif_e4b438b5-module__99aiIq__className {
+  font-family: leJourSerif, leJourSerif Fallback;
+}
+
+.lejourserif_e4b438b5-module__99aiIq__variable {
+  --font-le-jour: "leJourSerif", "leJourSerif Fallback";
+}
+
+/*# sourceMappingURL=AF-s-Portfolio_app_lejourserif_e4b438b5_module_css_bad6b30c._.single.css.map*/
