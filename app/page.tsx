@@ -1,5 +1,5 @@
 "use client"
-
+import { Analytics } from "@vercel/analytics/next"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
