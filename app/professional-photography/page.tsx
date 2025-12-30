@@ -154,7 +154,7 @@ export default function ProjectsPage() {
               <p className="max-w-4xl leading-relaxed text-[#4d4d4d]">
                 Developed to support branding and visual identity projects, this section
                 highlights materials, form, and detail through controlled lighting and composition.
-                The interplay between proportion and layout mirrors commercial precision — a dialogue
+                The interplay between proportion and layout mirrors commercial precision a dialogue
                 between product functionality and aesthetic clarity.
                 <br /><br />
                 The images were crafted to communicate product value and narrative,
