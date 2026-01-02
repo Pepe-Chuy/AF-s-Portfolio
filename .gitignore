@@ -1,1 +1,11 @@
-node_modules
+# Next.js
+.next/
+out/
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

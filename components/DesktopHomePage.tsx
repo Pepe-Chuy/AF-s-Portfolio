@@ -25,7 +25,7 @@ export default function DesktopHomePage() {
       href: "/graphic-design",
       label: "Visual & Graphic Design",
       x: -520,
-      y: 50,
+      y: 194,
       labelPosition: "left",
     },
     {
@@ -34,7 +34,7 @@ export default function DesktopHomePage() {
       href: "/industrial-design",
       label: "Industrial & Product design",
       x: 520,
-      y: 50,
+      y: 194,
       labelPosition: "top",
     },
     {
@@ -43,7 +43,7 @@ export default function DesktopHomePage() {
       href: "/professional-photography",
       label: "Professional Photography",
       x: 380,
-      y: 230,
+      y: 374,
       labelPosition: "right",
     },
     {
@@ -52,7 +52,7 @@ export default function DesktopHomePage() {
       href: "/about-me",
       label: "About Me",
       x: 380,
-      y: -150,
+      y: -6,
       labelPosition: "right",
     },
     {
@@ -61,7 +61,7 @@ export default function DesktopHomePage() {
       href: "/skills",
       label: "Skills",
       x: -380,
-      y: -150,
+      y: -6,
       labelPosition: "bottom",
     },
     {
@@ -70,7 +70,7 @@ export default function DesktopHomePage() {
       href: "/contact",
       label: "Contact",
       x: -380,
-      y: 230,
+      y: 374,
       labelPosition: "left",
     },
   ]

@@ -124,10 +124,9 @@ export default function IndustrialDesignPage() {
           </section>
         </div>
 
-        <div className="hidden md:block space-y-24">
+        <div className="hidden md:block">
           {/* Perfume Packaging */}
-
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-6">
               <div className="relative w-full aspect-square">
                 <Image 
@@ -149,7 +148,7 @@ export default function IndustrialDesignPage() {
           </div>
 
           {/* Headphones */}
-          <div className="grid md:grid-cols-4 gap-8 min-h-[95vh] relative">
+          <div className="grid md:grid-cols-4 gap-8 min-h-[95vh] relative mb-24">
             {/* First image – slightly shorter, fully visible, extending into next section */}
             <div className="flex items-start justify-center md:col-span-1 md:row-span-1">
               <div className="relative w-[95%] md:w-[105%] h-[55vh] md:h-[80vh]">
@@ -190,7 +189,7 @@ export default function IndustrialDesignPage() {
           </div>
 
           {/* PureDial */}
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-16 items-start mb-48">
             <div className="relative w-full aspect-[3/4]">
               <Image 
                 src="/images/puredial.png" 
@@ -205,53 +204,47 @@ export default function IndustrialDesignPage() {
                 PureDial is a design project aimed at protecting and improving the quality of life for users undergoing 
                 hemodialysis. The wearable device was conceptualized through sketching, ideation, and prototyping to adapt 
                 to different body areas where treatment is performed. <strong>Renderings were created in Marvelous Designer</strong> to 
-                simulate fabric and usability. This project highlights a user-centered approach focused on comfort, 
-                adaptability, and discretion in medical product design.
+                simulate fabric and usability. This project highlights a user-centered approach focused on comfort, adaptability, 
+                and discretion in medical product design.
               </p>
             </div>
           </div>
 
           {/* Tattoo Machine */}
-          <div className="grid md:grid-cols-2 gap-8 items-start min-h-[85vh]">
-            {/* Left images scaled and overlapped */}
-            <div className="flex gap-0 justify-center relative">
-              <div className="relative w-[55%] aspect-[3/4] z-10">
+          <div className="grid md:grid-cols-3 gap-12 items-start min-h-[85vh] mb-24">
+            {/* Left column - Text */}
+            <div className="flex flex-col justify-center space-y-4 text-[#4d4d4d] leading-relaxed font-medium">
+              <h3 className="font-semibold text-2xl text-[#3d3d3d]">
+                Tattoo Machine – Proposal (2025)
+              </h3>
+              <p>
+                The proposal combines aesthetics with functionality, integrating modern materials and a sleek form to
+                improve user comfort during extended sessions.
+              </p>
+            </div>
+
+            {/* Center column - Tattopen image */}
+            <div className="flex items-center justify-center">
+              <div className="relative w-full aspect-[3/4]">
                 <Image 
-                  src="/images/tattoo_1.png" 
-                  alt="Tattoo machine concept 1" 
+                  src="/images/tattopen.png" 
+                  alt="Tattoo machine open concept" 
                   fill 
-                  className="object-cover rounded-lg" 
-                />
-              </div>
-              <div className="relative w-[55%] aspect-[3/4] -ml-12">
-                <Image 
-                  src="/images/tattoo_3.png" 
-                  alt="Tattoo machine concept 2" 
-                  fill 
-                  className="object-cover rounded-lg" 
+                  className="object-contain" 
                 />
               </div>
             </div>
 
-            {/* Text with inline image */}
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed font-medium -ml-8">
-              <h3 className="font-semibold text-2xl text-[#3d3d3d]">
-                Tattoo Machine – Proposal (2025)
-              </h3>
-
-              <p className="relative">
-                {/* Inline image floated to top-right */}
-                <span className="relative float-right w-96 h-80 ml-4 mb-2">
-                  <Image
-                    src="/images/tattoo_2.png"
-                    alt="Tattoo machine render"
-                    fill
-                    className="object-contain"
-                  />
-                </span>
-                The proposal combines aesthetics with functionality, integrating modern materials and a sleek form to
-                improve user comfort during extended sessions.
-              </p>
+            {/* Right column - Tattoo 2 image */}
+            <div className="flex items-center justify-center">
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="/images/tattoo_2.png"
+                  alt="Tattoo machine render"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
 

@@ -123,12 +123,19 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Safari-specific fixes */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   .font-serif {
     font-family: var(--font-le-jour), "Georgia", serif; /* Updated font classes to use custom fonts */
+    /* Safari font loading fix */
+    font-display: swap;
   }
   .font-script {
     font-family: var(--font-parfumiere), cursive;
+    font-display: swap;
   }
     * {
     color: #5f6a61 !important;
@@ -138,6 +145,13 @@
   }
   p {
     @apply text-xl leading-relaxed;
+  }
+  
+  /* Safari-specific viewport fixes */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      min-height: -webkit-fill-available;
+    }
   }
 }
 

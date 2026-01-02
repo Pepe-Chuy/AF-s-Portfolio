@@ -6,11 +6,31 @@ import Link from "next/link"
 
 export default function MobileHomePage() {
   const [itemsVisible, setItemsVisible] = useState(true)
+  const [fontsLoaded, setFontsLoaded] = useState(false)
 
   useEffect(() => {
     // Disable scroll on the whole page
     document.body.style.overflow = "hidden"
     document.documentElement.style.overflow = "hidden"
+
+    // Ensure fonts are loaded before showing content
+    const loadFonts = async () => {
+      try {
+        // Wait for fonts to be loaded
+        if (document.fonts) {
+          await document.fonts.ready
+        }
+        // Additional delay to ensure Safari renders properly
+        setTimeout(() => {
+          setFontsLoaded(true)
+        }, 100)
+      } catch (error) {
+        console.warn('Font loading error:', error)
+        setFontsLoaded(true)
+      }
+    }
+
+    loadFonts()
 
     return () => {
       // Restore when leaving
@@ -26,7 +46,7 @@ export default function MobileHomePage() {
       href: "/graphic-design",
       label: "Visual & Graphic Design",
       x: -120,
-      y: 100,
+      y: 180,
       labelPosition: "left",
     },
     {
@@ -35,7 +55,7 @@ export default function MobileHomePage() {
       href: "/industrial-design",
       label: "Industrial & Product design",
       x: 120,
-      y: 100,
+      y: 180,
       labelPosition: "right",
     },
     {
@@ -44,7 +64,7 @@ export default function MobileHomePage() {
       href: "/professional-photography",
       label: "Professional Photography",
       x: -100,
-      y: -80,
+      y: 0,
       labelPosition: "left",
     },
     {
@@ -53,7 +73,7 @@ export default function MobileHomePage() {
       href: "/about-me",
       label: "About Me",
       x: 100,
-      y: -80,
+      y: 0,
       labelPosition: "right",
     },
     {
@@ -62,7 +82,7 @@ export default function MobileHomePage() {
       href: "/skills",
       label: "Skills",
       x: -60,
-      y: 180,
+      y: 260,
       labelPosition: "bottom",
     },
     {
@@ -71,14 +91,16 @@ export default function MobileHomePage() {
       href: "/contact",
       label: "Contact",
       x: 60,
-      y: 180,
+      y: 260,
       labelPosition: "bottom",
     },
   ]
 
   return (
     <div
-      className={`min-h-[100svh] bg-[#f1f0ee] relative overflow-hidden flex flex-col items-center justify-center px-4`}
+      className={`min-h-[100svh] bg-[#f1f0ee] relative overflow-hidden flex flex-col items-center justify-center px-4 ${
+        !fontsLoaded ? 'opacity-0' : 'opacity-100'
+      } transition-opacity duration-300`}
     >
       <div
         className="flex flex-col items-center justify-center w-full h-full pointer-events-none"
@@ -86,14 +108,24 @@ export default function MobileHomePage() {
         {/* Header */}
         <motion.header
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          animate={{ opacity: fontsLoaded ? 1 : 0, y: fontsLoaded ? 0 : -20 }}
+          transition={{ duration: 0.8, delay: fontsLoaded ? 0 : 0.2 }}
           className="text-center mb-8 pointer-events-auto"
         >
-          <h1 className="font-serif text-3xl sm:text-4xl tracking-wide text-[#5f6a61] mb-1 leading-tight" style={{ fontFamily: 'var(--font-le-jour), Georgia, serif' }}>
+          <h1 
+            className="font-serif text-3xl sm:text-4xl tracking-wide text-[#5f6a61] mb-1 leading-tight" 
+            style={{ 
+              fontFamily: 'var(--font-le-jour), Georgia, serif'
+            }}
+          >
             ANA FER DLT
           </h1>
-          <p className="font-script text-4xl sm:text-5xl text-[#5f6a61] leading-none">
+          <p 
+            className="font-script text-4xl sm:text-5xl text-[#5f6a61] leading-none"
+            style={{ 
+              fontFamily: 'var(--font-parfumiere), cursive'
+            }}
+          >
             Strategic designer specialist
           </p>
         </motion.header>
@@ -101,8 +133,8 @@ export default function MobileHomePage() {
         {/* Handbag */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          animate={{ opacity: fontsLoaded ? 1 : 0, scale: fontsLoaded ? 1 : 0.9 }}
+          transition={{ duration: 0.8, delay: fontsLoaded ? 0.3 : 0.5 }}
           className="relative w-full max-w-xs aspect-[4/3] flex items-center justify-center cursor-pointer pointer-events-auto mb-6"
           onClick={() => setItemsVisible(!itemsVisible)}
           whileTap={{ scale: 0.95 }}
@@ -117,7 +149,7 @@ export default function MobileHomePage() {
         </motion.div>
 
         {/* Instruction text */}
-        {!itemsVisible && (
+        {!itemsVisible && fontsLoaded && (
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -131,7 +163,7 @@ export default function MobileHomePage() {
 
       {/* Floating Items */}
       <AnimatePresence>
-        {itemsVisible && (
+        {itemsVisible && fontsLoaded && (
           <div className="absolute inset-0 pointer-events-none">
             {items.map((item, index) => (
               <motion.div
