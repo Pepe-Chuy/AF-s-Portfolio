@@ -1,163 +1,35 @@
-[00:00:02.005] Server  LOG      ✓ Ready in 1347ms
-[00:00:05.049] Server  LOG      ○ Compiling / ...
-[00:00:05.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.066] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                <RedirectBoundary>
-                  <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                      <SegmentViewNode type="page" pagePath="page.tsx">
-                        <SegmentTrieNode>
-                        <ClientPageRoot Component={function HomePage} serverProvidedParams={{...}}>
-                          <HomePage params={Promise} searchParams={Promise}>
-                            <MobileHomePage>
-                              <div
-+                               className="min-h-[100svh] bg-[#f1f0ee] relative overflow-x-hidden flex flex-col items-..."
--                               className="min-h-screen bg-[#f1f0ee] relative overflow-hidden scale-[1.15] origin-cent..."
-                              >
-                                <div
-+                                 className="flex flex-col items-center w-full"
--                                 className="flex flex-col items-center justify-center w-full h-full pointer-events-none"
-                                >
-                                  <motion.header initial={{opacity:0,y:-20}} animate={{opacity:1,y:0}} ...>
-                                    <header
-+                                     className="text-center mb-8"
--                                     className="text-center mb-14 pointer-events-auto"
-                                      style={{opacity:0,transform:"translateY..."}}
-                                      ref={function useMotionRef.useCallback}
-                                    >
-                                      <h1
-+                                       className="font-serif text-3xl sm:text-4xl tracking-wide text-[#5f6a61] mb-1 l..."
--                                       className="font-serif text-6xl md:text-7xl tracking-wide text-[#5f6a61] mb-1 l..."
-                                      >
-+                                       ANA FER DLT
-                                      <p
-+                                       className="font-script text-4xl sm:text-5xl text-[#5f6a61] leading-none"
--                                       className="font-script text-8xl text-[#5f6a61] leading-none"
-                                      >
-+                                       Strategic designer specialist
-                                  <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
-                                    <div
-+                                     className="relative w-full max-w-xs aspect-[4/3] flex items-center justify-cente..."
--                                     className="relative w-full max-w-lg aspect-[4/3] flex items-center justify-cente..."
-                                      onClick={function onClick}
-                                      tabIndex={0}
-                                      style={{opacity:0,transform:"scale(0.9)"}}
-                                      ref={function useMotionRef.useCallback}
-                                    >
-                                      <img
-                                        alt="Designer handbag"
-                                        fetchPriority={undefined}
-                                        loading="lazy"
-+                                       width={300}
--                                       width="460"
-+                                       height={225}
--                                       height="340"
-                                        decoding="async"
-                                        data-nimg="1"
-                                        className="object-contain"
-                                        style={{color:"transparent"}}
-                                        sizes={undefined}
-                                        srcSet={undefined}
-                                        src="/images/handbag.png"
-                                        ref={function}
-                                        onLoad={function onLoad}
-                                        onError={function onError}
-                                      >
-                                  <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.2}} ...>
-                                    <p
-+                                     className="text-center text-[#5f6a61] font-sans text-lg sm:text-xl mb-8"
--                                     className="text-center text-[#5f6a61] font-sans mt-16 text-2xl md:text-2xl point..."
-                                      style={{opacity:0}}
-                                      ref={function useMotionRef.useCallback}
-                                    >
-+                                     Tap the bag to explore
--                                     Click the bag to explore
-                                ...
-                      ...
-                    ...
-        ...
-
-[00:00:07.066] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.066] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:07.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316234291}
-[00:00:07.066] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:40.473] Browser WARN    Image with src "/images/handbag.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.990] Server  LOG      ✓ Ready in 1372ms
+[00:00:07.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.790] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:07.790] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.790] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.790] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767333647913}
+[00:06:33.818] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/professional-photography color: rgb(120, 120, 120) color: inherit {"dp":"/professional-photography","o":"http://localhost:3000/professional-photography","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334033953}
+[00:06:35.602] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334035736}
+[00:06:56.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:57.196] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:57.196] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:06:57.196] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:06:57.196] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334057333}
+[00:06:58.296] Browser WARN    Image with src "/images/handbag.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:03:52.453] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316460503}
-[00:03:59.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316467379}
-[00:04:02.771] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/professional-photography color: rgb(120, 120, 120) color: inherit {"dp":"/professional-photography","o":"http://localhost:3000/professional-photography","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316470825}
-[00:04:11.364] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316479410}
-[00:04:14.223] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316482272}
-[00:04:19.874] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316487927}
-[00:04:30.110] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316498165}
-[00:04:31.192] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316499246}
-[00:04:33.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about-me color: rgb(120, 120, 120) color: inherit {"dp":"/about-me","o":"http://localhost:3000/about-me","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316501307}
-[00:04:53.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316522017}
-[00:04:55.954] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industrial-design color: rgb(120, 120, 120) color: inherit {"dp":"/industrial-design","o":"http://localhost:3000/industrial-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767316524010}
-[00:22:09.154] Server  LOG      ✓ Compiled in 2.6s
-[00:22:22.482] Server  LOG      ✓ Compiled in 509ms
-[00:31:30.542] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318118589}
-[00:31:33.475] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318121532}
-[00:31:45.559] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318133611}
-[00:31:47.113] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industrial-design color: rgb(120, 120, 120) color: inherit {"dp":"/industrial-design","o":"http://localhost:3000/industrial-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318135164}
-[00:31:49.733] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318137780}
-[00:31:51.687] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/professional-photography color: rgb(120, 120, 120) color: inherit {"dp":"/professional-photography","o":"http://localhost:3000/professional-photography","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318139745}
-[00:31:57.112] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318145164}
-[00:32:01.447] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industrial-design color: rgb(120, 120, 120) color: inherit {"dp":"/industrial-design","o":"http://localhost:3000/industrial-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318149498}
-[00:32:05.331] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318153371}
-[00:32:10.380] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318158431}
-[00:32:12.935] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318160991}
-[00:32:15.342] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318163400}
-[00:33:20.828] Server  LOG      ✓ Compiled in 1269ms
-[00:33:54.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:54.606] Browser WARN    Image with src "/images/game_on.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:09:35.727] Server  LOG      ✓ Compiled in 112ms
+[00:09:41.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:41.736] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:41.737] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:41.737] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:41.737] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334221864}
+[00:10:02.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:02.915] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:02.915] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:02.915] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334243016}
+[00:10:02.915] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:03.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:03.715] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:03.715] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:03.715] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334243832}
+[00:10:03.715] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:04.710] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/professional-photography color: rgb(120, 120, 120) color: inherit {"dp":"/professional-photography","o":"http://localhost:3000/professional-photography","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334244846}
+[00:10:05.057] Browser WARN    Image with src "/images/portrait_3.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:33:54.744] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:33:54.744] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/graphic-design","route":"/graphic-design"}
-[00:33:54.744] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318262795}
-[00:37:28.191] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318476239}
-[00:37:28.397] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:37:32.270] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318480328}
-[00:37:33.659] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318481674}
-[00:37:34.849] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about-me color: rgb(120, 120, 120) color: inherit {"dp":"/about-me","o":"http://localhost:3000/about-me","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318482863}
-[00:37:34.849] Browser WARN    Image with src "http://localhost:3000/images/ana-photo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:38:36.016] Server  LOG      ✓ Compiled in 237ms
-[00:39:50.654] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318618605}
-[00:39:53.014] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318621068}
-[00:39:59.465] Server  LOG      ✓ Compiled in 120ms
-[00:40:06.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318634137}
-[00:40:07.330] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industrial-design color: rgb(120, 120, 120) color: inherit {"dp":"/industrial-design","o":"http://localhost:3000/industrial-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318635370}
-[00:40:10.030] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318638076}
-[00:40:11.115] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/graphic-design color: rgb(120, 120, 120) color: inherit {"dp":"/graphic-design","o":"http://localhost:3000/graphic-design","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318639166}
-[00:40:12.310] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318640357}
-[00:40:13.364] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/professional-photography color: rgb(120, 120, 120) color: inherit {"dp":"/professional-photography","o":"http://localhost:3000/professional-photography","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318641417}
-[00:40:23.491] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318651539}
-[00:40:24.802] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about-me color: rgb(120, 120, 120) color: inherit {"dp":"/about-me","o":"http://localhost:3000/about-me","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318652854}
-[00:43:33.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:43:33.936] Browser WARN    Image with src "/images/ana-photo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:43:33.936] Browser WARN    Image with src "http://localhost:3000/images/ana-photo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:43:33.936] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:43:33.936] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/about-me","route":"/about-me"}
-[00:43:33.936] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about-me color: rgb(120, 120, 120) color: inherit {"dp":"/about-me","o":"http://localhost:3000/about-me","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767318841985}
-[00:46:47.864] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767319035897}
-[00:46:48.033] Browser WARN    Image with src "http://localhost:3000/images/handbag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:46:50.334] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about-me color: rgb(120, 120, 120) color: inherit {"dp":"/about-me","o":"http://localhost:3000/about-me","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767319038378}
+[00:10:06.274] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767334246402}
