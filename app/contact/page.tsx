@@ -33,6 +33,9 @@ export default function ContactPage() {
               ana0170@outlook.com
             </a>
           </p>
+          <p className="font-medium mt-4 pt-4 border-t border-[#4d4d4d]/20">
+            Languages: Spanish Native, English Fluent, French Intermediate, German Intermediate
+          </p>
         </div>
       </div>
     </div>
