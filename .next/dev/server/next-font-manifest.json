@@ -1,13 +1,48 @@
 {
   "app": {
-    "[project]/AF-s-Portfolio/app/graphic-design/page": [
+    "[project]/app/about-me/page": [
       "static/media/Geist_Variable-s.p.f19e4721.woff2",
       "static/media/GeistMono_Variable.p.73882635.woff2",
       "static/media/Le Jour Serif-s.p.428474eb.woff2",
       "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
       "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
     ],
-    "[project]/AF-s-Portfolio/app/page": [
+    "[project]/app/contact/page": [
+      "static/media/Geist_Variable-s.p.f19e4721.woff2",
+      "static/media/GeistMono_Variable.p.73882635.woff2",
+      "static/media/Le Jour Serif-s.p.428474eb.woff2",
+      "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
+      "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
+    ],
+    "[project]/app/graphic-design/page": [
+      "static/media/Geist_Variable-s.p.f19e4721.woff2",
+      "static/media/GeistMono_Variable.p.73882635.woff2",
+      "static/media/Le Jour Serif-s.p.428474eb.woff2",
+      "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
+      "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
+    ],
+    "[project]/app/industrial-design/page": [
+      "static/media/Geist_Variable-s.p.f19e4721.woff2",
+      "static/media/GeistMono_Variable.p.73882635.woff2",
+      "static/media/Le Jour Serif-s.p.428474eb.woff2",
+      "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
+      "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/Geist_Variable-s.p.f19e4721.woff2",
+      "static/media/GeistMono_Variable.p.73882635.woff2",
+      "static/media/Le Jour Serif-s.p.428474eb.woff2",
+      "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
+      "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
+    ],
+    "[project]/app/professional-photography/page": [
+      "static/media/Geist_Variable-s.p.f19e4721.woff2",
+      "static/media/GeistMono_Variable.p.73882635.woff2",
+      "static/media/Le Jour Serif-s.p.428474eb.woff2",
+      "static/media/Parfumiere Script Pro-s.p.bc44d257.woff2",
+      "static/media/Montserrat_ExtraLight-s.p.90a97881.woff2"
+    ],
+    "[project]/app/skills/page": [
       "static/media/Geist_Variable-s.p.f19e4721.woff2",
       "static/media/GeistMono_Variable.p.73882635.woff2",
       "static/media/Le Jour Serif-s.p.428474eb.woff2",

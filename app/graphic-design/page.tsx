@@ -3,10 +3,10 @@ import Link from "next/link"
 
 export default function VisualGraphicDesignPage() {
   return (
-    <div className="min-h-screen bg-[#f5f1ed] text-[#4d4d4d] font-sans">
+    <div className="min-h-screen bg-[#f5f1ed] text-[#4d4d4d] font-sans overflow-x-hidden">
       <Link
         href="/"
-        className="fixed top-8 left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-serif italic"
+        className="fixed top-4 left-4 md:top-8 md:left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-serif italic z-50"
       >
         ← Back to home
       </Link>
@@ -43,26 +43,25 @@ export default function VisualGraphicDesignPage() {
 
         {/* NASA - Image Left, Text and Logo Right */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-32">
-          <div className="relative w-[115%] aspect-[4/3]">
-            <Image
-              src="/images/NASA_1.png"
-              alt="NASA Project"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="relative h-full flex flex-col">
-            {/* Logo at top right */}
-            <div className="flex justify-end mb-4">
-              <div className="relative w-[80%] aspect-square max-w-[200px]">
-                <Image
-                  src="/images/NASA_2.png"
-                  alt="NASA Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          <div className="grid grid-cols-[1fr_auto] gap-4 items-start w-full md:w-[115%] order-2 md:order-1">
+            <div className="relative w-full aspect-[4/3]">
+              <Image
+                src="/images/NASA_1.png"
+                alt="NASA Project"
+                fill
+                className="object-contain"
+              />
             </div>
+            <div className="relative w-36 sm:w-40 md:w-40 aspect-square">
+              <Image
+                src="/images/NASA_2.png"
+                alt="NASA Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+          <div className="relative h-full flex flex-col order-1 md:order-2">
             {/* Text at bottom left */}
             <div className="space-y-4 mt-auto">
               <h3 className="font-bold text-xl text-[#3d3d3d]">
@@ -81,7 +80,7 @@ export default function VisualGraphicDesignPage() {
 
         {/* Peace Poster - Images Left, Text Right */}
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="flex gap-4 w-full">
+          <div className="flex gap-4 w-full order-2 md:order-1">
             <div className="relative flex-1 aspect-[3/5]">
               <Image
                 src="/images/ukraine_1.png"
@@ -99,7 +98,7 @@ export default function VisualGraphicDesignPage() {
               />
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 order-1 md:order-2">
             <h3 className="font-bold text-xl text-[#3d3d3d]">
               Peace Poster – Ukraine (2022)
             </h3>
@@ -116,6 +115,7 @@ export default function VisualGraphicDesignPage() {
             </p>
           </div>
         </div>
+
       </div>
     </div>
   )

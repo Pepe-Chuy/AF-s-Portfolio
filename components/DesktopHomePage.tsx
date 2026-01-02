@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 
 export default function DesktopHomePage() {
-  const [itemsVisible, setItemsVisible] = useState(false)
+  const [itemsVisible, setItemsVisible] = useState(true)
 
   useEffect(() => {
     // Disable scroll on the whole page

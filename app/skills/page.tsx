@@ -3,22 +3,19 @@ import Link from "next/link"
 
 export default function SkillsPage() {
   return (
-    <div className="min-h-screen bg-[#f5f1ed]">
+    <div className="min-h-screen bg-[#f5f1ed] overflow-x-hidden">
       <Link
         href="/"
-        className="fixed top-8 left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-serif italic"
+        className="fixed top-4 left-4 md:top-8 md:left-8 text-[#6d6d6d] hover:text-[#3d3d3d] transition-colors font-serif italic z-50"
       >
         ← Back to home
       </Link>
 
       <div className="max-w-5xl mx-auto px-4 py-20">
-        <h1 className="font-script font-normal text-9xl text-center text-[#3d3d3d] mb-16">skills</h1>
+        <h1 className="font-script font-normal text-6xl sm:text-7xl md:text-9xl text-center text-[#3d3d3d] mb-16">skills</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="relative w-full aspect-[3/4]">
-            <Image src="/images/ticketvert.png" alt="Design work" fill className="object-cover rounded-lg" />
-          </div>
-          <div className="space-y-8 text-[#4d4d4d]">
+          <div className="space-y-8 text-[#4d4d4d] order-1 md:order-2">
             <div>
               <h3 className="font-semibold text-lg mb-3 text-[#3d3d3d]">Strategic and Conceptual Design</h3>
               <ul className="space-y-2 text-sm leading-relaxed">
@@ -53,6 +50,10 @@ export default function SkillsPage() {
                 <li>• Microsoft Office / Google Workspace (presentations, documents & collaboration)</li>
               </ul>
             </div>
+          </div>
+
+          <div className="relative w-full aspect-[3/4] order-2 md:order-1 max-w-md mx-auto">
+            <Image src="/images/ticketvert.png" alt="Design work" fill className="object-cover rounded-lg" />
           </div>
         </div>
       </div>
